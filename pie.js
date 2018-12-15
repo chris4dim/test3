@@ -81,7 +81,7 @@ d3.csv("data.csv", function(error, data) {
 
     // "g element is a container used to group other SVG elements"
   var g2 = svg2.selectAll(".arc2")
-      .data(pie(data2))
+      .data(pie(data))
     .enter().append("g")
       .attr("class", "arc2");
 
