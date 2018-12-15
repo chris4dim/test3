@@ -75,7 +75,7 @@ d3.csv("data.csv", function(error, data) {
       .duration(2000)
     .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
       .attr("dy", ".35em")
-      .text(function(d) { return d.data.fruit; });
+      .text(function(d) { return d.data.Απόβλητα; });
     
 
     // "g element is a container used to group other SVG elements"
@@ -100,7 +100,7 @@ d3.csv("data.csv", function(error, data) {
       .duration(2000)
     .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
       .attr("dy", ".35em")
-      .text(function(d) { return d.data.fruit; });
+      .text(function(d) { return d.data.Απόβλητα; });
     
 });
 
