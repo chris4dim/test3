@@ -49,7 +49,7 @@ d3.csv("data.csv", function(error, data) {
     // parse data
     data.forEach(function(d) {
         d.count = +d.count;
-        d.fruit = d.fruit;
+        d.Απόβλητα = d.Απόβλητα;
     })
 
   // "g element is a container used to group other SVG elements"
@@ -61,7 +61,7 @@ d3.csv("data.csv", function(error, data) {
   // append path 
   g.append("path")
       .attr("d", arc)
-      .style("fill", function(d) { return color(d.data.fruit); })
+      .style("fill", function(d) { return color(d.data.Απόβλητα); })
     // transition 
     .transition()
       .ease(d3.easeLinear)
@@ -87,7 +87,7 @@ d3.csv("data.csv", function(error, data) {
    // append path 
   g2.append("path")
       .attr("d", arc2)
-      .style("fill", function(d) { return color(d.data.fruit); })
+      .style("fill", function(d) { return color(d.data.Απόβλητα); })
     .transition()
       .ease(d3.easeLinear)
       .duration(2000)
