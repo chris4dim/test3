@@ -53,7 +53,7 @@ d3.csv("data.csv", function(error, data) {
     })
     
     // import2 data 
-d3.csv("data2.csv", function(error, data) {
+d3.csv("data2.csv", function(error, data2) {
   if (error) throw error;
     
     // parse data
