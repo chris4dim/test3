@@ -51,6 +51,16 @@ d3.csv("data.csv", function(error, data) {
         d.count = +d.count;
         d.Απόβλητα = d.Απόβλητα;
     })
+    
+    // import2 data 
+d3.csv("data2.csv", function(error, data) {
+  if (error) throw error;
+    
+    // parse data
+    data2.forEach(function(d) {
+        d.count = +d.count;
+        d.Απόβλητα = d.Απόβλητα;
+    })
 
   // "g element is a container used to group other SVG elements"
   var g = svg.selectAll(".arc")
@@ -80,14 +90,14 @@ d3.csv("data.csv", function(error, data) {
 
     // "g element is a container used to group other SVG elements"
   var g2 = svg2.selectAll(".arc2")
-      .data(pie(data))
+      .data(pie(data2))
     .enter().append("g")
       .attr("class", "arc2");
 
    // append path 
   g2.append("path")
       .attr("d", arc2)
-      .style("fill", function(d) { return color(d.data.Απόβλητα); })
+      .style("fill", function(d) { return color(d.data2.Απόβλητα); })
     .transition()
       .ease(d3.easeLinear)
       .duration(2000)
@@ -100,7 +110,7 @@ d3.csv("data.csv", function(error, data) {
       .duration(2000)
     .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
       .attr("dy", ".35em")
-      .text(function(d) { return d.data.Απόβλητα; });
+      .text(function(d) { return d.data2.Απόβλητα; });
     
 });
 
