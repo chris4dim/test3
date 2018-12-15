@@ -20,8 +20,8 @@ var arc2 = d3.arc()
 
 // arc for the labels position
 var labelArc = d3.arc()
-    .outerRadius(radius - 40)
-    .innerRadius(radius - 40);
+    .outerRadius(radius - 70)
+    .innerRadius(radius - 70);
 
 // generate pie chart and donut chart
 var pie = d3.pie()
