@@ -15,3 +15,17 @@
 .arc2 path {
   stroke: #fff;
 }
+
+div#con{
+  width: 700px;
+  heigth: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+div#test{
+  width: 700px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
